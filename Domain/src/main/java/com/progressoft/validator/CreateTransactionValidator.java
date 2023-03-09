@@ -8,6 +8,7 @@ import com.progressoft.model.Account;
 import com.progressoft.model.Transaction;
 import lombok.AllArgsConstructor;
 
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,9 +37,8 @@ public class CreateTransactionValidator {
             if(account.getStatus().equals("Inactive"))
                 violations.add(new Violation(new AccountNotFoundException("Account is InActive")));
         } catch (RuntimeException ex) {
-            violations.add(new Violation(ex));
+            violations.add(new Violation(new AccountNotFoundException("Account Not Found From API")));
         }
-
         return violations;
     }
 }
