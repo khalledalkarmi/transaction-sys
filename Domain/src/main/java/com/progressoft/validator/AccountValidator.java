@@ -1,6 +1,12 @@
 package com.progressoft.validator;
 
+import com.progressoft.model.Transaction;
+
+import java.math.BigDecimal;
+
 public interface AccountValidator {
 
-    boolean isExist(long  accountNumber);
+    boolean isExit(Transaction transaction);
+
+    boolean isValidBalance(Transaction Transaction);
 }
