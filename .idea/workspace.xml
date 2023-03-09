@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98ef1dfe-83cc-437e-bd4b-eacd686635de" name="Changes" comment="add structure of project">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/Application/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +47,19 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.progressoft.application.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678343746471</updated>
-      <workItem from="1678343747624" duration="529000" />
+      <workItem from="1678343747624" duration="853000" />
     </task>
     <task id="LOCAL-00001" summary="add structure of project">
       <created>1678344153707</created>
@@ -86,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678344275590</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add structure of project">
+      <created>1678344289690</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678344289690</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
