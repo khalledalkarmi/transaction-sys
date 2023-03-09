@@ -1,5 +1,6 @@
 package com.progressoft.application.entity;
 
+import com.progressoft.application.resources.ResponseTransaction;
 import com.progressoft.model.Transaction;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +25,16 @@ public class TransactionMapper {
                 .amount(transactionEntity.getAmount())
                 .customerId(transactionEntity.getCustomerId())
                 .transactionTime(transactionEntity.getTransactionTime())
+                .build();
+    }
+
+    public ResponseTransaction toResponseTransaction(Transaction transaction) {
+        return ResponseTransaction.builder()
+                .customerId(transaction.getCustomerId())
+                .amount(transaction.getAmount())
+                .accountNumber(transaction.getAccountNumber())
+                .transactionTime(transaction.getTransactionTime())
+                .transactionType(transaction.getTransactionType())
                 .build();
     }
 }
