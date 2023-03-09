@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98ef1dfe-83cc-437e-bd4b-eacd686635de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/model/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/validator/AccountProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/usecases/CreateTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/usecases/CreateTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/validator/AccountValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/validator/CreateTransactionValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/validator/CreateTransactionValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +76,48 @@
       <recent name="com.progressoft.application.resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.progressoft.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.progressoft.application" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.application.ApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateTransactionValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Domain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.progressoft.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.progressoft.validator" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.validator.CreateTransactionValidatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Application" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.progressoft.application.Application" />
@@ -89,6 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #2" />
+        <item itemvalue="JUnit.ApplicationTests" />
+        <item itemvalue="JUnit.CreateTransactionValidatorTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
