@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98ef1dfe-83cc-437e-bd4b-eacd686635de" name="Changes" comment="add structure of project">
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/model/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/model/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/event/EventPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/event/TransactionEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/exception/AccountNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/exception/InvalidTransactionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/exception/NotEnoughBalanceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/exception/Violation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/usecases/CreateTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/validator/CreateTransactionValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -71,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678343746471</updated>
-      <workItem from="1678343747624" duration="1157000" />
+      <workItem from="1678343747624" duration="6013000" />
     </task>
     <task id="LOCAL-00001" summary="add structure of project">
       <created>1678344153707</created>
