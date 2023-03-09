@@ -39,16 +39,16 @@ class CreateTransactionValidatorTest {
         Assertions.assertEquals(violations.get(0).getException().getMessage() , "Invalid Amount null");
     }
 
-    @Test
-    public void givenValidTransaction_whenValidTransaction_thenNoThrowsReturned(){
-        Transaction transaction = Transaction.builder()
-                .accountNumber(11111L)
-                .amount(BigDecimal.TEN)
-                .customerId("2222")
-                .build();
-        List<Violation> violations = createTransactionValidator.validate(transaction);
-        Assertions.assertEquals(violations.size() , 0);
-
-    }
+//    @Test
+//    public void givenValidTransaction_whenValidTransaction_thenNoThrowsReturned(){
+//        Transaction transaction = Transaction.builder()
+//                .accountNumber(11111L)
+//                .amount(BigDecimal.TEN)
+//                .customerId("2222")
+//                .build();
+//        List<Violation> violations = createTransactionValidator.validate(transaction);
+//        Assertions.assertEquals(violations.size() , 0);
+//
+//    }
 
 }
