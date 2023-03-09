@@ -1,8 +1,11 @@
 package com.progressoft.validator;
 
+import com.progressoft.exception.AccountNotFoundException;
+import com.progressoft.exception.InvalidTransactionException;
 import com.progressoft.exception.Violation;
 import com.progressoft.model.Transaction;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -11,9 +14,16 @@ public class CreateTransactionValidator {
 
     public List<Violation> validate(Transaction transaction) {
         List<Violation> violations = new ArrayList<>();
-        if(Objects.isNull(transaction))
-            violations.add(new Violation(new IllegalArgumentException("Null Transaction")));
-//        if()
+        if (Objects.isNull(transaction))
+            violations.add(new Violation(new InvalidTransactionException("Null Transaction")));
+        else {
+            if (Objects.isNull(transaction.getAccountNumber()))
+                violations.add(new Violation(new AccountNotFoundException("Account Number is null")));
+            if (Objects.isNull(transaction.getCustomerId()))
+                violations.add((new Violation(new AccountNotFoundException("Customer Id is null"))));
+            if (Objects.isNull(transaction.getAmount()) || transaction.getAmount().compareTo(BigDecimal.ZERO) < 0)
+                violations.add(new Violation(new InvalidTransactionException("Invalid Amount " + transaction.getAmount())));
+        }
 
         return violations;
     }
