@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98ef1dfe-83cc-437e-bd4b-eacd686635de" name="Changes" comment="add structure of project">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/Application/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/model/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/model/TransactionType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Application" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678343746471</updated>
-      <workItem from="1678343747624" duration="853000" />
+      <workItem from="1678343747624" duration="1157000" />
     </task>
     <task id="LOCAL-00001" summary="add structure of project">
       <created>1678344153707</created>
