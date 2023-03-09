@@ -6,6 +6,7 @@ import com.progressoft.repository.TransactionRepository;
 import com.progressoft.validator.CreateTransactionValidator;
 import lombok.AllArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @AllArgsConstructor
@@ -19,6 +20,8 @@ public class CreateTransaction {
             violations.forEach(violation -> {
                 throw violation.getException();
             });
+
+        transaction.setTransactionTime(LocalDateTime.now());
 
         transactionRepository.save(transaction);
     }

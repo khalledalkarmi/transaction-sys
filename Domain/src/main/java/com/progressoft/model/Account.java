@@ -1,5 +1,4 @@
-package com.progressoft.application.entity.account;
-
+package com.progressoft.model;
 
 import lombok.*;
 
@@ -12,8 +11,6 @@ import java.math.BigDecimal;
 public class Account {
     private long accountNumber;
     private BigDecimal availableBalance;
-
     private String status;
     private String creationDate;
 }
-

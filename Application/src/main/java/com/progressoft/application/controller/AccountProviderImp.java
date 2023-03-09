@@ -1,8 +1,10 @@
 package com.progressoft.application.controller;
 
 
-import com.progressoft.application.entity.account.Account;
+import com.progressoft.model.Account;
 import com.progressoft.application.repository.AccountClient;
+import com.progressoft.model.Transaction;
+import com.progressoft.validator.AccountProvider;
 import feign.Feign;
 import feign.Logger;
 import feign.gson.GsonDecoder;
@@ -14,8 +16,8 @@ import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
-public class AccountController {
-    public Account getAccounts(String customerId, long accountNumber) {
+public class AccountProviderImp implements AccountProvider {
+    public Account getAccount(Transaction transaction) {
         AccountClient accountClient = Feign.builder().encoder(new GsonEncoder())
                 .client(new OkHttpClient())
                 .decoder(new GsonDecoder())
@@ -23,7 +25,7 @@ public class AccountController {
                 .logLevel(Logger.Level.FULL)
                 .target(AccountClient.class, "http://localhost:9090/api/v1/accounts");
 
-        Account accountByCustomerIdAndAccountNumber = accountClient.getAccountByCustomerIdAndAccountNumber(customerId, accountNumber);
+        Account accountByCustomerIdAndAccountNumber = accountClient.getAccountByCustomerIdAndAccountNumber(transaction.getCustomerId(), transaction.getAccountNumber());
         log.info(accountByCustomerIdAndAccountNumber.toString());
         return accountByCustomerIdAndAccountNumber;
     }

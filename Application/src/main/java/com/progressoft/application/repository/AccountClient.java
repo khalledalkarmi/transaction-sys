@@ -1,7 +1,7 @@
 package com.progressoft.application.repository;
 
 
-import com.progressoft.application.entity.account.Account;
+import com.progressoft.model.Account;
 import feign.Headers;
 import feign.Param;
 import feign.RequestLine;
