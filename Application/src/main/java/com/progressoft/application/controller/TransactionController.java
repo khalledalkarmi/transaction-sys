@@ -2,12 +2,11 @@ package com.progressoft.application.controller;
 
 import com.progressoft.application.entity.TransactionMapper;
 import com.progressoft.application.resources.ResponseTransaction;
+import com.progressoft.model.Transaction;
 import com.progressoft.repository.TransactionRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -22,11 +21,16 @@ public class TransactionController {
     private final TransactionMapper mapper;
 
 
-//    @GetMapping
-    public List<ResponseTransaction> getAllTransaction(){
+    @GetMapping
+    public List<ResponseTransaction> getAllTransaction() {
         return transactionRepository
                 .findAll()
                 .stream()
                 .map(mapper::toResponseTransaction).collect(Collectors.toList());
+    }
+
+    @PostMapping
+    public void insert(@RequestBody Transaction transaction) {
+        transactionRepository.save(transaction);
     }
 }
