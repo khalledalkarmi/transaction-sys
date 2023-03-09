@@ -22,7 +22,7 @@ public class TransactionController {
     private final TransactionMapper mapper;
 
 
-//    @GetMapping
+    @GetMapping
     public List<ResponseTransaction> getAllTransaction(){
         return transactionRepository
                 .findAll()
