@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98ef1dfe-83cc-437e-bd4b-eacd686635de" name="Changes" comment="add structure of project">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/event/EventPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/event/TransactionEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/exception/AccountNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/exception/InvalidTransactionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/exception/NotEnoughBalanceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/exception/Violation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/repository/TransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/usecases/CreateTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/validator/CreateTransactionValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/model/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/test/java/com/progressoft/validator/CreateTransactionValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +18,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -57,6 +47,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -83,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678343746471</updated>
-      <workItem from="1678343747624" duration="6013000" />
+      <workItem from="1678343747624" duration="6352000" />
     </task>
     <task id="LOCAL-00001" summary="add structure of project">
       <created>1678344153707</created>
@@ -106,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678344289690</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add structure of project">
+      <created>1678350311289</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678350311289</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
