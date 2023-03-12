@@ -7,10 +7,13 @@ import com.progressoft.model.Account;
 import com.progressoft.model.Transaction;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.math.BigDecimal;
 import java.util.List;
 
+@ExtendWith(MockitoExtension.class)
 class CreateTransactionValidatorTest {
 
     CreateTransactionValidator createTransactionValidator = new CreateTransactionValidator(new AccountProvider() {
