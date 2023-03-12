@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98ef1dfe-83cc-437e-bd4b-eacd686635de" name="Changes" comment="clean dead code">
-      <change afterPath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/controller/TransactionControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/repository/JpaTransactionRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Application/pom.xml" afterDir="false" />
+    <list default="true" id="98ef1dfe-83cc-437e-bd4b-eacd686635de" name="Changes" comment="add test case for JPA Data">
+      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/repository/JpaTransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/repository/JpaTransactionRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678601372774</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add test case for JPA Data">
+      <created>1678603097873</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678603097873</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +287,7 @@
     <MESSAGE value="add structure of project" />
     <MESSAGE value="make accountClient testable by make it bean" />
     <MESSAGE value="clean dead code" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean dead code" />
+    <MESSAGE value="add test case for JPA Data" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test case for JPA Data" />
   </component>
 </project>
