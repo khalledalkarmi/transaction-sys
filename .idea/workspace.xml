@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98ef1dfe-83cc-437e-bd4b-eacd686635de" name="Changes" comment="">
+    <list default="true" id="98ef1dfe-83cc-437e-bd4b-eacd686635de" name="Changes" comment="clean dead code">
+      <change afterPath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/controller/TransactionControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/repository/JpaTransactionRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/src/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Application/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +33,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -60,7 +64,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/yousef/IdeaProjects/transaction-system",
+    "last_opened_file_path": "/home/khaled/gitlab/transaction-sys/Application/src/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,10 +83,15 @@
       <recent name="com.progressoft.application.entity.account" />
       <recent name="com.progressoft.application.resources" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Application/src/test" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.progressoft.application.repository" />
+      <recent name="com.progressoft.application.controller" />
       <recent name="com.progressoft.usecases" />
       <recent name="com.progressoft.validator" />
     </key>
@@ -95,52 +104,81 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CreateTransactionTest.givenValidTransaction_whenExecute_thenExpectedResultIsReturned">
-    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JpaTransactionRepositoryTest.whenSave_thenExpectedResult">
+    <configuration name="AccountProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.progressoft.application.*" />
+          <option name="PATTERN" value="com.progressoft.application.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.progressoft.application" />
-      <option name="MAIN_CLASS_NAME" value="com.progressoft.application.ApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.progressoft.application.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.application.controller.AccountProviderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateTransactionTest.givenValidTransaction_whenExecute_thenExpectedResultIsReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Domain" />
+    <configuration name="JpaTransactionRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.progressoft.usecases.*" />
+          <option name="PATTERN" value="com.progressoft.application.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.progressoft.usecases" />
-      <option name="MAIN_CLASS_NAME" value="com.progressoft.usecases.CreateTransactionTest" />
-      <option name="METHOD_NAME" value="givenValidTransaction_whenExecute_thenExpectedResultIsReturned" />
+      <option name="PACKAGE_NAME" value="com.progressoft.application.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.application.repository.JpaTransactionRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JpaTransactionRepositoryTest.findAllByAccountNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.progressoft.application.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.progressoft.application.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.application.repository.JpaTransactionRepositoryTest" />
+      <option name="METHOD_NAME" value="findAllByAccountNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateTransactionValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Domain" />
+    <configuration name="JpaTransactionRepositoryTest.whenFindAllByAccountNumber_thenShouldReturnEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.progressoft.validator.*" />
+          <option name="PATTERN" value="com.progressoft.application.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.progressoft.validator" />
-      <option name="MAIN_CLASS_NAME" value="com.progressoft.validator.CreateTransactionValidatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.progressoft.application.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.application.repository.JpaTransactionRepositoryTest" />
+      <option name="METHOD_NAME" value="whenFindAllByAccountNumber_thenShouldReturnEmptyList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JpaTransactionRepositoryTest.whenSave_thenExpectedResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.progressoft.application.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.progressoft.application.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.application.repository.JpaTransactionRepositoryTest" />
+      <option name="METHOD_NAME" value="whenSave_thenExpectedResult" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,10 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateTransactionTest.givenValidTransaction_whenExecute_thenExpectedResultIsReturned" />
-        <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="JUnit.ApplicationTests" />
-        <item itemvalue="JUnit.CreateTransactionValidatorTest" />
+        <item itemvalue="JUnit.JpaTransactionRepositoryTest.whenSave_thenExpectedResult" />
+        <item itemvalue="JUnit.JpaTransactionRepositoryTest" />
+        <item itemvalue="JUnit.JpaTransactionRepositoryTest.whenFindAllByAccountNumber_thenShouldReturnEmptyList" />
+        <item itemvalue="JUnit.JpaTransactionRepositoryTest.findAllByAccountNumber" />
+        <item itemvalue="JUnit.AccountProviderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +210,6 @@
       <updated>1678343746471</updated>
       <workItem from="1678343747624" duration="6352000" />
       <workItem from="1678368377717" duration="3643000" />
-      <workItem from="1678599188541" duration="1576000" />
     </task>
     <task id="LOCAL-00001" summary="add structure of project">
       <created>1678344153707</created>
@@ -201,7 +239,28 @@
       <option name="project" value="LOCAL" />
       <updated>1678350311289</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="make accountClient testable by make it bean">
+      <created>1678601166321</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678601166321</updated>
+    </task>
+    <task id="LOCAL-00006" summary="make accountClient testable by make it bean">
+      <created>1678601190145</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678601190145</updated>
+    </task>
+    <task id="LOCAL-00007" summary="clean dead code">
+      <created>1678601372774</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678601372774</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +278,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Application" />
+    </ignored-roots>
     <MESSAGE value="add structure of project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add structure of project" />
+    <MESSAGE value="make accountClient testable by make it bean" />
+    <MESSAGE value="clean dead code" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean dead code" />
   </component>
 </project>
