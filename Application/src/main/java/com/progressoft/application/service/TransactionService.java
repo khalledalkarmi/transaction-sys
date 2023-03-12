@@ -1,17 +1,19 @@
-package com.progressoft.application.repository;
+package com.progressoft.application.service;
 
 import com.progressoft.application.entity.TransactionMapper;
+import com.progressoft.application.repository.JpaTransactionRepository;
 import com.progressoft.model.Transaction;
 import com.progressoft.repository.TransactionRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @AllArgsConstructor
-@Repository
-public class TransactionRepositoryMySql implements TransactionRepository {
+@Service
+public class TransactionService implements TransactionRepository {
     private final JpaTransactionRepository transactionRepository;
 
     private final TransactionMapper mapper;

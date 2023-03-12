@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Builder(access = AccessLevel.PUBLIC)
-public class ResponseTransaction {
+public class TransactionResponse {
     private String customerId;
     private Long accountNumber;
     private TransactionType transactionType;

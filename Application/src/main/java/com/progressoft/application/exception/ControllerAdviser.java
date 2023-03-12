@@ -7,30 +7,46 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @ControllerAdvice
 public class ControllerAdviser extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(AccountNotFoundException.class)
-    public ResponseEntity<String> handleAccountNotFoundException(
+    public ResponseEntity<Map> handleAccountNotFoundException(
             AccountNotFoundException ex, WebRequest request) {
 
-        return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+        Map<String , Object> exception = new HashMap<>();
+        exception.put("message" , ex.getMessage());
+        exception.put("status_code" , HttpStatus.NOT_FOUND.value());
+        exception.put("url" , ((ServletWebRequest) request).getRequest().getRequestURI());
+        return new ResponseEntity<>(exception, HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(InvalidTransactionException.class)
-    public ResponseEntity<String> handleInvalidTransactionException(
+    public ResponseEntity<Map> handleInvalidTransactionException(
             InvalidTransactionException ex, WebRequest request) {
 
-        return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+        Map<String , Object> exception = new HashMap<>();
+        exception.put("message" , ex.getMessage());
+        exception.put("status_code" , HttpStatus.BAD_REQUEST.value());
+        exception.put("url" , ((ServletWebRequest) request).getRequest().getRequestURI());
+        return new ResponseEntity<>(exception, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(NotEnoughBalanceException.class)
-    public ResponseEntity<String> handleNotEnoughBalanceException(
+    public ResponseEntity<Map> handleNotEnoughBalanceException(
             NotEnoughBalanceException ex, WebRequest request) {
 
-        return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+        Map<String , Object> exception = new HashMap<>();
+        exception.put("message" , ex.getMessage());
+        exception.put("status_code" , HttpStatus.BAD_REQUEST.value());
+        exception.put("url" , ((ServletWebRequest) request).getRequest().getRequestURI());
+        return new ResponseEntity<>(exception, HttpStatus.BAD_REQUEST);
     }
 }

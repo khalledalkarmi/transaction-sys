@@ -12,10 +12,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.Collection;
 import java.util.Collections;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -32,7 +30,7 @@ class CreateTransactionTest {
     @Test
     public void givenValidTransaction_whenExecute_thenExpectedResultIsReturned(){
         Transaction transaction = Transaction.builder()
-                .transactionType(TransactionType.Credit)
+                .transactionType(TransactionType.CREDIT)
                 .amount(BigDecimal.TEN)
                 .transactionTime(LocalDateTime.now())
                 .customerId("1000")

@@ -44,7 +44,7 @@ class JpaTransactionRepositoryTest {
     public TransactionEntity getTransactionEntity() {
         return TransactionEntity.builder()
                 .transactionTime(LocalDateTime.now())
-                .transactionType(TransactionType.Credit)
+                .transactionType(TransactionType.CREDIT)
                 .amount(BigDecimal.TEN)
                 .accountNumber(1234567891234567L)
                 .id(1L)
@@ -54,7 +54,7 @@ class JpaTransactionRepositoryTest {
     public Transaction getTransaction() {
         return Transaction.builder()
                 .transactionTime(LocalDateTime.now())
-                .transactionType(TransactionType.Credit)
+                .transactionType(TransactionType.CREDIT)
                 .amount(BigDecimal.TEN)
                 .accountNumber(1234567891234567L)
                 .id(1L)
