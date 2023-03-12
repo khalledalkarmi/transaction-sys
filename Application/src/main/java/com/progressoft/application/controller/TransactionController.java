@@ -13,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -37,8 +38,27 @@ public class TransactionController {
         try {
             Transaction transaction = mapper.toTransaction(transactionRequest);
             createTransaction.execute(transaction);
+            log.info("Transaction Added {}" , transaction.getCustomerId());
         } catch (IllegalArgumentException ex) {
             throw new InvalidTransactionException("Invalid Transaction Type");
         }
+    }
+
+    @GetMapping(value = "{customerId}/{accountNumber}",produces="application/json")
+    public List<TransactionResponse> getTransactionByCustomerIdAndAccountNumber(@PathVariable String accountNumber, @PathVariable String customerId) {
+        return transactionRepository
+                .findAllByAccountNumberAndCustomerId(Long.valueOf(accountNumber), customerId)
+                .stream()
+                .map(mapper::toResponseTransaction)
+                .collect(Collectors.toList());
+    }
+
+    @GetMapping(value = "{customerId}",produces="application/json")
+    public List<TransactionResponse> getTransactionByCustomerId( @PathVariable String customerId) {
+        return transactionRepository
+                .findAllByCustomerId( customerId)
+                .stream()
+                .map(mapper::toResponseTransaction)
+                .collect(Collectors.toList());
     }
 }

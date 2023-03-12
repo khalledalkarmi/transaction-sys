@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98ef1dfe-83cc-437e-bd4b-eacd686635de" name="Changes" comment="add test case for JPA Data">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/config/Configurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/config/Configurations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/controller/AccountProviderImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/controller/AccountProviderImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/controller/TransactionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/repository/JpaTransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/repository/JpaTransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/progressoft/application/repository/TransactionRepositoryMySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/controller/AccountProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/controller/AccountProviderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/repository/JpaTransactionRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/test/java/com/progressoft/application/repository/JpaTransactionRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/usecases/CreateTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/com/progressoft/usecases/CreateTransaction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,33 +57,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/khaled/gitlab/transaction-sys/Application/src/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "e498749f3c42246d50b15c81c101d988",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/khaled/gitlab/transaction-sys/Application/src/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e498749f3c42246d50b15c81c101d988&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.progressoft.application.entity.account" />
@@ -84,6 +94,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.progressoft.application.repository" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.progressoft.application.repository" />
@@ -100,18 +113,11 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JpaTransactionRepositoryTest.whenSave_thenExpectedResult">
-    <configuration name="AccountProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TransactionControllerTest.whenGetAllTransaction_thenExpectedResultReturned">
+    <configuration name="All in Application" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Application" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.progressoft.application.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.progressoft.application.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.progressoft.application.controller.AccountProviderTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,22 +133,6 @@
       <option name="PACKAGE_NAME" value="com.progressoft.application.repository" />
       <option name="MAIN_CLASS_NAME" value="com.progressoft.application.repository.JpaTransactionRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JpaTransactionRepositoryTest.findAllByAccountNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Application" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.progressoft.application.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.progressoft.application.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.progressoft.application.repository.JpaTransactionRepositoryTest" />
-      <option name="METHOD_NAME" value="findAllByAccountNumber" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -179,6 +169,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TransactionControllerTest.whenGetAllTransaction_thenExpectedResultReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.progressoft.application.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.progressoft.application.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.progressoft.application.controller.TransactionControllerTest" />
+      <option name="METHOD_NAME" value="whenGetAllTransaction_thenExpectedResultReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Application" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.progressoft.application.Application" />
@@ -188,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TransactionControllerTest.whenGetAllTransaction_thenExpectedResultReturned" />
+        <item itemvalue="JUnit.All in Application" />
         <item itemvalue="JUnit.JpaTransactionRepositoryTest.whenSave_thenExpectedResult" />
         <item itemvalue="JUnit.JpaTransactionRepositoryTest" />
         <item itemvalue="JUnit.JpaTransactionRepositoryTest.whenFindAllByAccountNumber_thenShouldReturnEmptyList" />
-        <item itemvalue="JUnit.JpaTransactionRepositoryTest.findAllByAccountNumber" />
-        <item itemvalue="JUnit.AccountProviderTest" />
       </list>
     </recent_temporary>
   </component>

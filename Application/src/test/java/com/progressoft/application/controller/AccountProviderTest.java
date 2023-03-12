@@ -15,8 +15,5 @@ class AccountProviderTest {
     @MockBean
     AccountProvider accountProvider;
 
-    @Test
-    public void whenGetAccount() {
-        when(accountProvider.getAccount(any(Transaction.class))).thenReturn(new Account());
-    }
+
 }

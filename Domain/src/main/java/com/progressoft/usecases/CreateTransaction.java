@@ -26,7 +26,6 @@ public class CreateTransaction {
 
         transaction.setTransactionTime(LocalDateTime.now());
         transactionRepository.save(transaction);
-
         eventPublisher.publish(new TransactionEvent(transaction , "TRANSACTION_CREATED"));
     }
 }

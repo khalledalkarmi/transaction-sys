@@ -36,9 +36,9 @@ class JpaTransactionRepositoryTest {
     public void whenSave_thenExpectedResult() {
         TransactionEntity save = transactionRepository.save(getTransactionEntity());
         Assertions.assertThat(save).hasFieldOrPropertyWithValue("amount", BigDecimal.TEN);
-        List<TransactionEntity> allByAccountNumber = transactionRepository.findAllByAccountNumber(1234567891234567L);
+        List<TransactionEntity> allByAccountNumber = transactionRepository.findAllByCustomerId("1234567891234567L");
         Assertions.assertThat(allByAccountNumber.size()).isEqualTo(1);
-        Assertions.assertThat(allByAccountNumber.get(0)).hasFieldOrPropertyWithValue("accountNumber", 1234567891234567L);
+        Assertions.assertThat(allByAccountNumber.get(0)).hasFieldOrPropertyWithValue("customerId", "1234567891234567L");
     }
 
     public TransactionEntity getTransactionEntity() {
@@ -46,7 +46,7 @@ class JpaTransactionRepositoryTest {
                 .transactionTime(LocalDateTime.now())
                 .transactionType(TransactionType.CREDIT)
                 .amount(BigDecimal.TEN)
-                .accountNumber(1234567891234567L)
+                .customerId("1234567891234567L")
                 .id(1L)
                 .build();
     }
@@ -56,7 +56,7 @@ class JpaTransactionRepositoryTest {
                 .transactionTime(LocalDateTime.now())
                 .transactionType(TransactionType.CREDIT)
                 .amount(BigDecimal.TEN)
-                .accountNumber(1234567891234567L)
+                .customerId("1234567891234567L")
                 .id(1L)
                 .build();
 

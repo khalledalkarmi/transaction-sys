@@ -29,8 +29,9 @@ public class Configurations {
 
     @Bean
     public AccountClient accountClient() {
-        return Feign.builder().encoder(new GsonEncoder())
+        return Feign.builder()
                 .client(new OkHttpClient())
+                .encoder(new GsonEncoder())
                 .decoder(new GsonDecoder())
                 .logger(new Slf4jLogger(AccountClient.class))
                 .logLevel(Logger.Level.FULL)

@@ -17,9 +17,7 @@ public class AccountProviderImp implements AccountProvider {
     private final AccountClient accountClient;
 
     public Account getAccount(Transaction transaction) {
-        Account accountByCustomerIdAndAccountNumber = accountClient.getAccountByCustomerIdAndAccountNumber(transaction.getCustomerId(), transaction.getAccountNumber());
-        log.info(accountByCustomerIdAndAccountNumber.toString());
-        return accountByCustomerIdAndAccountNumber;
+        return accountClient.getAccountByCustomerIdAndAccountNumber(transaction.getCustomerId(), transaction.getAccountNumber());
     }
 
 }

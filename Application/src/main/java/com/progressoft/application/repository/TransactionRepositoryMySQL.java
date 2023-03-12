@@ -1,7 +1,6 @@
-package com.progressoft.application.service;
+package com.progressoft.application.repository;
 
 import com.progressoft.application.entity.TransactionMapper;
-import com.progressoft.application.repository.JpaTransactionRepository;
 import com.progressoft.model.Transaction;
 import com.progressoft.repository.TransactionRepository;
 import lombok.AllArgsConstructor;
@@ -12,20 +11,20 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @AllArgsConstructor
-@Service
-public class TransactionService implements TransactionRepository {
-    private final JpaTransactionRepository transactionRepository;
+@Repository
+public class TransactionRepositoryMySQL implements TransactionRepository {
+    private final JpaTransactionRepository jpaTransactionRepository;
 
     private final TransactionMapper mapper;
 
     @Override
     public void save(Transaction transaction) {
-        transactionRepository.save(mapper.toTransactionEntity(transaction));
+        jpaTransactionRepository.save(mapper.toTransactionEntity(transaction));
     }
 
     @Override
     public List<Transaction> findAll() {
-        return transactionRepository
+        return jpaTransactionRepository
                 .findAll()
                 .stream()
                 .map(mapper::toTransaction)
@@ -33,9 +32,16 @@ public class TransactionService implements TransactionRepository {
     }
 
     @Override
-    public List<Transaction> findByAccountNumber(Long accountNumber) {
-        return transactionRepository
-                .findAllByAccountNumber(accountNumber)
+    public List<Transaction> findAllByAccountNumberAndCustomerId(Long accountNumber, String customerId){
+        return jpaTransactionRepository.findAllByAccountNumberAndCustomerId(accountNumber, customerId)
+                .stream()
+                .map(mapper::toTransaction)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Transaction> findAllByCustomerId(String customerId) {
+        return jpaTransactionRepository.findAllByCustomerId(customerId)
                 .stream()
                 .map(mapper::toTransaction)
                 .collect(Collectors.toList());
